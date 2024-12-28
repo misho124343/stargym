@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Добре дошли в Спортен клуб Звезда - вашето място за спорт и успех.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Начало - Спортен клуб Звезда</title>
+</head>
+<body>
+  <header>
+    <h1>Спортен клуб Звезда</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Начало</a></li>
+      <li><a href="history.html">История</a></li>
+      <li><a href="activities.html">Дейности</a></li>
+      <li><a href="gallery.html">Галерия</a></li>
+      <li><a href="news.html">Новини</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+      <li><a href="partners.html">Партньори</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="welcome" class="content-section">
+      <h2>Добре дошли в Спортен клуб Звезда!</h2>
+      <p>Ние предлагаме спортни дейности за всички възрасти и възможности. Станете част от нашата общност и изживейте радостта от спорта!</p>
+    </div>
+
+    <div id="activities" class="content-section">
+      <h2>Нашите дейности</h2>
+      <ul>
+        <li>Бокс</li>
+        <li>Борба</li>
+        <li>Кикбокс</li>
+        <li>ММА</li>
+      </ul>
+      <p><a href="activities.html">Вижте всички дейности</a></p>
+    </div>
+
+    <div id="news" class="content-section">
+      <h2>Последни новини</h2>
+      <div class="news-item">
+        <h4>СП по кикбокс</h4>
+        <p>Световното първенство по кикбокс за младежи ще се проведе това лято в Унгария <a href="news.html">Научете повече...</a></p>
+      </div>
+      <div class="news-item">
+        <h4>Нов спортен салон</h4>
+        <p>Нашият нов спортен салон е вече отворен за тренировки. <a href="news.html">Научете повече...</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Спортен клуб Звезда | <a href="contacts.html">Контакти</a> | <a href="partners.html">Партньори</a></p>
+    <a href="https://www.facebook.com" target="_blank" title="Следвайте ни във Facebook">
+      <span class="fab fa-facebook"></span>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" title="Следвайте ни в Instagram">
+      <span class="fab fa-instagram"></span>
+    </a>
+  </footer>
+
+  <script>
+    const images = [
+      '1.jpg',
+      '2.jpg',
+      '3.jpg'
+    ];
+
+    let currentImageIndex = 0;
+
+    function changeBackground() {
+      document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+
+    setInterval(changeBackground, 5000);
+    changeBackground();
+  </script>
+</body>
+</html>

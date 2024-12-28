@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1:hover {
+  color: gold;
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #333;
+  padding: 15px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: gold;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+main {
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2, h3 {
+  color: darkblue;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h2:hover, h3:hover {
+  color: gold;
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: gold;
+  text-decoration: underline;
+}

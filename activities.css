@@ -1,0 +1,126 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color:#333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+  padding: 15px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #fff; 
+  color: #444;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  padding: 20px;
+}
+
+.activity {
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.activity-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+h3, h4 {
+  color: #333;
+  font-size: 1.4em;
+  position: relative;
+  z-index: 2;
+}
+
+h1:hover, h3:hover, h4:hover {
+  color: gold;
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background-color: #333;
+  color: whitesmoke;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+.nd {
+  color: #333;
+  text-decoration: none;
+}

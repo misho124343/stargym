@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  position: relative;
+  text-align: center;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1:hover {
+  color: gold;
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #333;
+  padding: 15px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: gold;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+main {
+  padding: 40px;
+  margin: 20px;
+  text-align: left;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.news-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 20px;
+}
+
+.news-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.news-item h3 {
+  font-size: 1.5em;
+  color: #000305;
+  margin: 0 0 10px;
+}
+
+.news-item h3:hover {
+  color: gold;
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.news-item .date {
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #000509;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  align-self: start;
+}
+
+.news-item p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.news-item a {
+  color: #010a13;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .news-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .news-item img {
+    margin: 0 auto 15px;
+  }
+
+  .news-item .date {
+    margin: 0 auto 10px;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: gold;
+  text-decoration: underline;
+}
